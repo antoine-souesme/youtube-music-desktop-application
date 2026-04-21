@@ -1,0 +1,46 @@
+{
+    "name": "youtube-music-wrapper",
+    "version": "0.0.1",
+    "description": "Simple wrapper for Youtube Music, for easy account switching. Made with electron",
+    "license": "ISC",
+    "author": "antoine.souesme",
+    "type": "commonjs",
+    "main": "src/main.js",
+    "scripts": {
+        "dev": "electron .",
+        "start": "electron .",
+        "build": "electron-builder",
+        "build:mac": "electron-builder --mac",
+        "build:win": "electron-builder --win"
+    },
+    "devDependencies": {
+        "electron": "^35.3.0",
+        "electron-builder": "^26.0.12"
+    },
+    "build": {
+        "appId": "com.youtube.music.wrapper",
+        "productName": "YouTube Music Wrapper",
+        "files": [
+            "src/**/*",
+            "package.json"
+        ],
+        "directories": {
+            "output": "dist"
+        },
+        "mac": {
+            "target": [
+                "dmg"
+            ],
+            "category": "public.app-category.music"
+        },
+        "win": {
+            "target": [
+                "nsis"
+            ]
+        },
+        "nsis": {
+            "oneClick": false,
+            "allowToChangeInstallationDirectory": true
+        }
+    }
+}
