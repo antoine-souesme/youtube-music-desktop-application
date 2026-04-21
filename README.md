@@ -1,4 +1,4 @@
-# YouTube Music Wrapper (Electron)
+# YouTube Music Desktop Application
 
 Application Electron ultra simple qui encapsule `https://music.youtube.com` dans une fenetre desktop.
 

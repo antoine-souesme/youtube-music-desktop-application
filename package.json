@@ -1,5 +1,5 @@
 {
-    "name": "youtube-music-wrapper",
+    "name": "youtube-music-desktop-application",
     "version": "0.0.1",
     "description": "Simple wrapper for Youtube Music, for easy account switching. Made with electron",
     "license": "ISC",
@@ -18,8 +18,8 @@
         "electron-builder": "^26.0.12"
     },
     "build": {
-        "appId": "com.youtube.music.wrapper",
-        "productName": "YouTube Music Wrapper",
+        "appId": "com.youtube.music.desktop.application",
+        "productName": "YouTube Music Desktop Application",
         "files": [
             "src/**/*",
             "package.json"
