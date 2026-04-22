@@ -1,6 +1,6 @@
 {
     "name": "youtube-music-desktop-application",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Simple wrapper for Youtube Music, for easy account switching. Made with electron",
     "license": "ISC",
     "author": "antoine.souesme",
