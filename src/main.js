@@ -127,7 +127,7 @@ function createMainWindow() {
 
     if (isDev) {
         mainWindow.webContents.on("did-finish-load", () => {
-            mainWindow.setTitle("YouTube Music Wrapper (dev)");
+            mainWindow.setTitle("YouTube Music Desktop Application (dev)");
         });
     }
 
