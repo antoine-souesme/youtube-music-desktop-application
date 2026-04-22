@@ -3,6 +3,7 @@ const path = require("path");
 
 const YOUTUBE_MUSIC_URL = "https://music.youtube.com";
 const isDev = !app.isPackaged;
+const APP_ICON_PATH = path.join(__dirname, "..", "build", "icons", "icon.png");
 
 const allowedHosts = new Set([
     "music.youtube.com",
@@ -94,6 +95,7 @@ function createMainWindow() {
         height: 820,
         minWidth: 980,
         minHeight: 640,
+        icon: APP_ICON_PATH,
         backgroundColor: "#0f0f0f",
         webPreferences: {
             preload: path.join(__dirname, "preload.js"),
