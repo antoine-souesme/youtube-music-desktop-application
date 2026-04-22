@@ -1,49 +1,31 @@
 # YouTube Music Desktop Application
 
-Application Electron ultra simple qui encapsule `https://music.youtube.com` dans une fenetre desktop.
+Ultra simple Electron application that encapsulates `https://music.youtube.com` in a desktop window. Nothing more.
 
-## Prerequis
+<img width="1473" height="1095" alt="Capture d’écran 2026-04-22 à 09 22 28" src="https://github.com/user-attachments/assets/0f74527c-0da3-412a-86a3-26feefbd7c47" />
 
-- Node.js 18+
-- npm 9+
+### Why
 
-## Installation
+I built it because I was tired of having to switch accounts every time I watched YouTube. This solves it.
+
+# Development
+
+## Install Deps
 
 ```bash
 npm install
 ```
 
-## Lancement en local
+## Local Dev
 
 ```bash
 npm run dev
 ```
 
-## Scripts disponibles
+## Build Scripts
 
-- `npm run dev` : lance l'application en mode developpement
-- `npm run start` : lance l'application (equivalent local)
-- `npm run build` : build pour la plateforme courante
-- `npm run build:mac` : genere un package macOS (`.dmg`)
-- `npm run build:win` : genere un package Windows (NSIS `.exe`)
+- `npm run build` : Build for current platform
+- `npm run build:mac` : Build for macOS (`.dmg`)
+- `npm run build:win` : Build Windows (NSIS `.exe`)
 
-Les artefacts sont produits dans `dist/`.
-
-## Structure
-
-- `src/main.js` : processus principal Electron (fenetre, menu, regles de navigation)
-- `src/preload.js` : preload minimal avec isolation activee
-- `package.json` : scripts + configuration `electron-builder`
-
-## Securite appliquee
-
-- `nodeIntegration: false`
-- `contextIsolation: true`
-- `sandbox: true`
-- Liens externes hors domaines Google/YouTube rediriges vers le navigateur systeme
-
-## Notes packaging
-
-- macOS : un build `.dmg` est genere sans signature par defaut
-- Windows : installateur NSIS genere
-- Si tu veux distribuer publiquement, il faudra ajouter signature/certificats
+Artefacts are build into `dist/`.
