@@ -121,7 +121,7 @@ function createMainWindow() {
                   titleBarOverlay: {
                       color: "#0f0f0f",
                       symbolColor: "#ffffff",
-                      height: 40
+                      height: 39
                   }
               }
             : {}),

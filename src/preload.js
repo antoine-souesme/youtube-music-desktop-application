@@ -7,7 +7,7 @@ const BACK_BUTTON_STYLE_ID = "ytmda-window-back-button-style";
 const TITLEBAR_ID = "ytmda-window-titlebar";
 const TITLEBAR_SPACER_ID = "ytmda-window-titlebar-spacer";
 const isSupportedPlatform = process.platform === "darwin" || process.platform === "win32";
-const TITLEBAR_HEIGHT = process.platform === "darwin" ? "32px" : "36px";
+const TITLEBAR_HEIGHT = process.platform === "darwin" ? "38px" : "39px";
 
 let uiConfig = {
     homeUrl: "https://music.youtube.com",
@@ -21,13 +21,13 @@ const FALLBACK_BACK_ICON_DATA_URL = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0ia
 function getBackButtonOffsets() {
     if (process.platform === "darwin") {
         return {
-            top: "2px",
-            left: "70px"
+            top: "calc(50% - 14px)",
+            left: "74px"
         };
     }
 
     return {
-        top: "4px",
+        top: "calc(50% - 14px)",
         left: "8px"
     };
 }
