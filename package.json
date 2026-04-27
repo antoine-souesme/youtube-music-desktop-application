@@ -23,6 +23,7 @@
         "productName": "YouTube Music Desktop Application",
         "files": [
             "src/**/*",
+            "assets/**/*",
             "build/icons/**/*",
             "package.json"
         ],
