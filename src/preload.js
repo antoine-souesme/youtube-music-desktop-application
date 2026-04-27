@@ -111,6 +111,7 @@ function ensureBackButtonStyle() {
             height: 16px;
             pointer-events: none;
             display: block;
+            filter: brightness(0) invert(1);
         }
 
         #${BACK_BUTTON_ID}.is-visible {
@@ -120,11 +121,6 @@ function ensureBackButtonStyle() {
 
         #${BACK_BUTTON_ID}:hover {
             background: rgba(255, 255, 255, 0.08);
-            transform: translateY(-1px);
-        }
-
-        #${BACK_BUTTON_ID}:active {
-            transform: translateY(0);
         }
 
         #${BACK_BUTTON_ID}:focus-visible {
